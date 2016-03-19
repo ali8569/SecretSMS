@@ -71,7 +71,7 @@ public class MainActivity extends Activity implements OnClickListener {
 				smsmanager.sendTextMessage(phone, null, text, null, null);
 			break;
 		case R.id.button1:
-			Intent intent = new Intent(this, Inbox.class);
+			Intent intent = new Intent(this, ListSms.class);
 			startActivity(intent);
 			break;
 		}
