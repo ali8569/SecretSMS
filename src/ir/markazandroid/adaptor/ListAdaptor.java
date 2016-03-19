@@ -1,4 +1,4 @@
-package ir.markazandroid.secretsms;
+package ir.markazandroid.adaptor;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,6 +7,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import ir.markazandroid.secretsms.R;
+import ir.markazandroid.secretsms.R.id;
+import ir.markazandroid.secretsms.R.layout;
 
 import java.util.ArrayList;
 

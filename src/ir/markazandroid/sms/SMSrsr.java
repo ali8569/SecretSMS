@@ -1,6 +1,7 @@
-package ir.markazandroid.secretsms;
+package ir.markazandroid.sms;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 import android.content.ContentResolver;
@@ -10,8 +11,8 @@ import android.net.Uri;
 public class SMSrsr {
 
 	private static ContentResolver cr;
-	static List<String> numbers = new ArrayList<String>();
-	static List<String> bodys = new ArrayList<String>();
+	public static List<String> numbers = new ArrayList<String>();
+	public static List<String> bodys = new ArrayList<String>();
 
 	public static ContentResolver getCr() {
 		return cr;
@@ -21,7 +22,7 @@ public class SMSrsr {
 		SMSrsr.cr = cr;
 	}
 
-	static void readInbox() {
+	public static void readInbox() {
 
 		Cursor cursor = getCr().query(Uri.parse("content://sms/inbox"), null,
 				null, null, null);
@@ -38,7 +39,6 @@ public class SMSrsr {
 					numbers.add(number);
 			} while (cursor.moveToNext());
 		} else {
-
 		}
 	}
 

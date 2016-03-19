@@ -1,4 +1,4 @@
-package ir.markazandroid.secretsms;
+package ir.markazandroid.sms;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
