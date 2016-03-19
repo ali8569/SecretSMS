@@ -12,7 +12,9 @@
         android:id="@+id/phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginLeft="42dp"
         android:layout_marginTop="17dp"
         android:ems="10"
         android:hint="شماره"
@@ -29,6 +31,11 @@
         android:hint="متن"
         android:ems="10" />
 
+    <TextView
+        android:id="@+id/smsbody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
 
     <Button
         android:id="@+id/bt"
@@ -46,13 +53,13 @@
         android:layout_marginTop="68dp"
         android:text="inbox" />
 
-    <TextView
-        android:id="@+id/sqlview"
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/bt"
-        android:layout_alignBottom="@+id/bt"
-        android:layout_alignRight="@+id/matn"
-        android:text="TextView" />
+        android:text="contacts"
+        android:id="@+id/contactbutt"
+        android:layout_below="@+id/bt"
+        android:layout_alignRight="@+id/phone"
+        android:layout_alignEnd="@+id/phone" />
 
 </RelativeLayout>
